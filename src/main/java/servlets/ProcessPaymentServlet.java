@@ -73,7 +73,7 @@ public class ProcessPaymentServlet extends HttpServlet {
         String button = "<a href=\"#\" class=\"btn btn-info\">Order Placed</a>\r\n";
         return "<div class=\"card\">\r\n"
                 + "                <div class=\"row card-body\">\r\n"
-                + "                    <img class=\"col-sm-6\" src=\"logo.png\" alt=\"Card image cap\">\r\n"
+                + "                    <img class=\"col-sm-6\" src=\"logo.\" alt=\"Card image cap\">\r\n"
                 + "                    <div class=\"col-sm-6\">\r\n"
                 + "                        <h5 class=\"card-title text-success\">" + bName + "</h5>\r\n"
                 + "                        <p class=\"card-text\">\r\n"
