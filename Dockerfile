@@ -1,3 +1,3 @@
-FROM tomcat:9
-COPY target/onlinebookstore.war /usr/local/tomcat/webapps/app.war
-CMD ["catalina.sh", "run"]
+from tomcat:9
+copy target/*.war /usr/local/tomcat/webapps/train.war
+cmd ["catalina.sh", "run"]

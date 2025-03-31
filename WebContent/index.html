@@ -1,59 +1,73 @@
+<!DOCTYPE html>
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Book Store</title>
-<link rel="apple-touch-icon" sizes="180x180"
-	href="./favicons/apple-touch-icon.">
-<link rel="icon" type="image/" sizes="32x32"
-	href="./favicons/favicon-32x32.">
-<link rel="icon" type="image/" sizes="16x16"
-	href="./favicons/favicon-16x16.">
-<link rel="manifest" href="./favicons/site.webmanifest">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" >
-<link rel="stylesheet" href="styles.css">
-
+<title>E-Trains</title>
+<link rel="stylesheet" href="UserHome_Css.css">
 </head>
-<body onload="funload()">
+<body>
 	<header>
-		<nav class="navbar navbar-expand-sm bg-dark">
-				<a class="navbar-brand">
-					<!-- The below line can be an image or a h1, either will work -->
-					<img src="logo." alt="Google logo" width="60" height="30px">
-				</a>
-				
-				<button style="background-color:white;" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-				    <span class="navbar-toggler-icon" ></span>
-				 </button>
-
-                <div class="collapse navbar-collapse" id="navbarNav">                
-				<ul class="navbar-nav" >
-					<li class="nav-item"><span><a class="nav-link active" href="index.html">Home</a></span></li>
-					<li class="nav-item "><span><a class="nav-link" href="CustomerLogin.html">Login</a></span></li>
-					<li class="nav-item "><span><a class="nav-link" href="CustomerRegister.html">Register</a></span></li>
-				</ul>
-				</div>
-			</nav>
+		<h1 class="hd">National Ticket Booking Spot</h1>
+		<div class="home">
+			<p class="menu">
+				<a href="userhome">Home</a>
+			</p>
+		</div>
+		<div class="home">
+			<p class="menu">
+				<a href="userviewtrainfwd">View Trains</a>
+			</p>
+		</div>
+		<div class="home">
+			<p class="menu">
+				<a href="trainbwstnfwd">Trains Between Stations</a>
+			</p>
+		</div>
+		<div class="home">
+			<p class="menu">
+				<a href="bookingdetails">Ticket Booking History</a>
+			</p>
+		</div>
+		<div class="home">
+			<p class="menu">
+				<a href="fareenqfwd">Fare Enquiry</a>
+			</p>
+		</div>
+		<div class="home">
+			<p class="menu">
+				<a href="useravailfwd">Seat Availability</a>
+			</p>
+		</div>
+		<div class="home">
+			<p class="menu">
+				<a href="usersearchtrain">Search By TrainNo</a>
+			</p>
+		</div>
+		<div class="home">
+			<p class="menu">
+				<a href="userprofile">Profile</a>
+			</p>
+		</div>
+		<div class="home">
+			<p class="menu">
+				<a href="userlogout">Logout</a>
+			</p>
+		</div>
 	</header>
-	<br>
-	<div id="topmid"><h1>Welcome to Online <br>Book Store</h1></div>
-	<br>
-	<table class="tab">
-		<tr>
-			<td><a href="index.html" id="happy">Happy Learning!!<br>Welcome to our book store!</a></td>
-		</tr>
-	</table>
+	<div class="tab green">User Login</div>
+	<form action="userlogin" class="tab brown" method="post">
+		<br /> UserName: <input type="text" name="uname"
+			placeholder="Enter Your EmailId"> <br /> <br /> Password: <input
+			type="password" name="pword"> <br /> <br /> <input
+			type="submit" value=" LOGIN "><br />
 
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js" ></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js"></script>
-	<script>
-		// Preloder script
-		var tmp = document.getElementById("loding");
-		function funload() {
-		  loding.style.display = "none";
-		}
-	  </script>
-
-
+	</form>
+	<br />
+	<footer>
+		<address id="cent">
+			Contact: Mr. Shashi Raj<br />Email:<a href="mailto">thebittercode@gmail.com</a><br />PhoneNo:
+			9876543210
+		</address>
+	</footer>
 </body>
 </html>
