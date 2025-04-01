@@ -6,6 +6,6 @@ pipeline {
               	    echo "cloning repository" 
               	    echo "repo cloned successfully"  
               	    }  
-         	    } 
+         	  } 
         }
 }
