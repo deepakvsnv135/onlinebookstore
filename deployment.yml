@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: my-container
-        image: my-image
+        image: deepakvsnv/my-obs
         ports:
         - containerPort: 80
 
