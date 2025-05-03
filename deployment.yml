@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: my-container
-        image: deepakvsnv/onnlinebook-store:latest
+        image: deepakvsnv/onnlinebook-store
         ports:
         - containerPort: 80
 
