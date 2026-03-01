@@ -1,3 +1,36 @@
+# 📚 Online Book Store - Full Stack Java Web App
+
+A robust J2EE-based web application for managing an online bookstore, featuring a fully automated **CI/CD Pipeline** using **GitHub Actions**, **Docker**, and **AWS/Linux** deployment.
+
+## 🚀 Key Achievements (DevOps & Engineering)
+- **Automated CI/CD:** Engineered a GitHub Actions workflow to handle the entire lifecycle from code push to production.
+- **Containerization:** Dockerized the Tomcat environment to ensure "run anywhere" consistency.
+- **Cloud Deployment:** Orchestrated automated deployment to a remote Ubuntu (EC2) instance via SSH.
+- **Scalability:** Integrated Maven for automated builds and dependency management.
+
+## 🛠 Tech Stack
+- **Backend:** Java (J2EE), Maven, Apache Tomcat
+- **DevOps:** GitHub Actions, Docker, Docker Hub
+- **Infrastructure:** Ubuntu Linux, SSH Authentication
+- **Frontend:** HTML, CSS, JSP
+
+## 🏗 CI/CD Architecture
+1. **Build:** GitHub Action triggers on `push`, sets up JDK 17, and builds the `.war` file using Maven.
+2. **Containerize:** Docker builds a custom image with the application artifact and pushes it to **Docker Hub**.
+3. **Deploy:** The pipeline SSHs into the **Ubuntu Server**, pulls the latest image, and restarts the container.
+
+## 🚦 Getting Started
+
+### Prerequisites
+- Docker installed on your machine
+- Java 17 & Maven (for local builds)
+
+### Run Locally with Docker
+```bash
+docker pull ${{ secrets.DOCKERHUB_USERNAME }}/onlinebookstore:latest
+docker run -d -p 8080:8080 --name bookstore-app onlinebookstore
+
+
 # <a href="https://shashirajraja.github.io/onlinebookstore/WebContent/index.html" target="_blank"> OnlineBookStore </a> Website Using Java 
 ![onlinebookstore](https://user-images.githubusercontent.com/34605595/137615096-8447d32d-bddc-4f13-a8ed-3c0f4dd5e04e.png)
 ###### To View First Front Page Design of this website <a href="https://shashirajraja.github.io/onlinebookstore/WebContent/index.html" target="_blank">Click Here</a><br>
