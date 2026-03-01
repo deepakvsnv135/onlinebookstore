@@ -1,4 +1,4 @@
-# 📚 Online Book Store - Full Stack Java Web App
+# 📚 Online Book Store - Deepak Vaishnav
 
 A robust J2EE-based web application for managing an online bookstore, featuring a fully automated **CI/CD Pipeline** using **GitHub Actions**, **Docker**, and **AWS/Linux** deployment.
 
